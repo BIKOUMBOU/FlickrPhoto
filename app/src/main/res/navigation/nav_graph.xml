@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.josse.flickrphoto.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/versListFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/versFullFragment"
+            app:destination="@id/fullFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.josse.flickrphoto.ui.list.ListFragment"
+        android:label="list_fragment"
+        tools:layout="@layout/list_fragment" >
+        <action
+            android:id="@+id/versFullFragment"
+            app:destination="@id/fullFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullFragment"
+        android:name="com.josse.flickrphoto.ui.full.FullFragment"
+        android:label="full_fragment"
+        tools:layout="@layout/full_fragment" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+</navigation>
