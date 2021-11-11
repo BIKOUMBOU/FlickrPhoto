@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FlickrPhoto</string>
+    <string name="all_images">All images</string>
+    <string name="next">Next</string>
+    <string name="todo">TODO</string>
+    <string name="flickr">Flickr</string>
 </resources>

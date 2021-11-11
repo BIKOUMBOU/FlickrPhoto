@@ -11,15 +11,21 @@
 
     <TextView
         android:id="@+id/imageTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
         android:layout_marginStart="189dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="189dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/flickr"
+        android:textColor="#EF0D36"
+        android:textColorHint="#0FECC0"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,23 +34,26 @@
         android:layout_marginTop="27dp"
         android:layout_marginBottom="36dp"
         android:adjustViewBounds="false"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/nextButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageTitle"
         app:layout_constraintWidth_max="wrap"
-        tools:ignore="MissingConstraints"
-        tools:src="@tools:sample/avatars" />
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:src="@drawable/isis" />
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/next"
+        android:textColor="#8ACF39"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/allImagesButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
@@ -55,7 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
-        android:text="All images"
+        android:text="@string/all_images"
+        android:textColor="#EC0D0D"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
